@@ -2776,8 +2776,8 @@
 			background-size: cover;
 			cursor: default;
 			height: 40vh;
-			max-height: 40em;
-			min-height: 23em;
+			max-height: 30em;
+			min-height: 20em;
 			overflow: hidden;
 			position: relative;
 			width: 40%;
@@ -2867,7 +2867,7 @@
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #000;
+				background-color: #e7b788;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
@@ -3441,7 +3441,7 @@
 				}
 
 		#banner.major {
-			height: 80vh;
+			height: 92.5vh;
 			min-height: 30em;
 			max-height: 50em;
 		}
