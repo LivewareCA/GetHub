@@ -1,5 +1,7 @@
 GetHub - The personal browser-hub.
 
+A custom homepage. 
+
 Feature-List: (* Denotes Work in-progress.)
 
 * Launch Steam (Origin) games from browser (I tested this, it works)
@@ -19,18 +21,18 @@ Other Features:
 
 Credits:
 
-	Template: 
-		Forty by HTML5 UP - CCA 3.0 license
+Template: 
+	Forty by HTML5 UP (html5up.net)
 
-	Demo Images:
-		Unsplash (unsplash.com)
+Demo Images:
+	Unsplash (unsplash.com)
 
-	Icons:
-		Weather Icons by Erik Flowers (http://erikflowers.github.io/weather-icons/) - SIL OFL 1.1 license
-		Font Awesome (fortawesome.github.com/Font-Awesome)
+Icons:
+	Weather Icons by Erik Flowers (erikflowers.github.io/weather-icons)
+	Font Awesome (fortawesome.github.com/Font-Awesome)
 
-	Other:
-		jQuery (jquery.com)
-		background-size polyfill (github.com/louisremi)
-		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
+Other:
+	jQuery (jquery.com)
+	background-size polyfill (github.com/louisremi)
+	Respond.js (j.mp/respondjs)
+	Skel (skel.io)
