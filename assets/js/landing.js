@@ -54,7 +54,7 @@ else if (hours > 11 && hours < 12){
 }
 
 else if (hours > 12 && hours < 18){
-    $('.colour').css({'background-image': 'linear-gradient(to top, #1c92d2 0%, #2B32B2 100%)'});
+    $('.colour').css({'background': 'url("images/sky_alt.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("greeting").innerHTML = res;

@@ -17,6 +17,7 @@ Dynamic background by time of day
 
 Other Features:
 * Make a work version
+* background image array instead of gradient
 
 
 Credits:
