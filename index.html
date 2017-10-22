@@ -181,38 +181,36 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-					<script>
-var now = new Date();
-var hours = now.getHours();
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			var now = new Date();
+			var hours = now.getHours();
 
-// 0h to 6h
-if (hours > 0 && hours < 6){
-	$('.colour').css({'background': 'linear-gradient(to top, #000000 0%, #434343 100%)'});
-}
+			// 0h to 6h
+			if (hours > 0 && hours < 6){
+				$('.colour').css({'background-image': 'linear-gradient(to top, #000000 0%, #434343 100%)'});
+			}
 
-else if (hours > 6 && hours < 12){
-	$('.colour').css({'background': 'linear-gradient(to top, #141E30 0%, #354C66 100%)'});
-}
+			else if (hours > 6 && hours < 12){
+				$('.colour').css({'background-image': 'linear-gradient(to top, #141E30 0%, #354C66 100%)'});
+			}
 
-else if (hours > 12 && hours < 18){
-	$('.colour').css({'background': 'linear-gradient(to top, #56CCF2 0%, #2F80ED 99%, #56CCF2 100%)'});
-}
+			else if (hours > 12 && hours < 18){
+				$('.colour').css({'background-image': 'linear-gradient(to top, #56CCF2 0%, #2F80ED 100%)'});
+			}
 
-else if (hours > 18 && hours < 21){
-	$('.colour').css({'background': 'linear-gradient(to top, #141E30 0%, #243B55 100%)'});
-}
+			else if (hours > 18 && hours < 21){
+				$('.colour').css({'background-image': 'linear-gradient(to top, #141E30 0%, #243B55 100%)'});
+			}
 
-else {
-$('.colour').css({'background': 'linear-gradient(to top, #141E30 0%, #243B55 100%)'});
-}
-    console.log('applying webkit gradient');
+			else {
+			$('.colour').css({'background-image': 'linear-gradient(to top, #141E30 0%, #243B55 100%)'});
+			}
 		</script>
 	</body>
 </html>
