@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
 
@@ -22,7 +21,7 @@
 					<section id="banner" class="major colour">
 						<div class="inner">
 							<header class="major">
-								<h1>Hello, Jason! Having a good day?</h1>
+								<h1 id="mo">[dynamic greeting], Jason!</h1>
 							</header>
 							<div class="content">
 								<i class="wi wi-night-alt-cloudy"></i>
@@ -181,6 +180,7 @@
 			</div>
 
 		<!-- Scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -192,19 +192,33 @@
 			var hours = now.getHours();
 
 			// 0h to 6h
-			if (hours > 0 && hours < 6){
-				$('.colour').css({'background-image': 'linear-gradient(to top, #000000 0%, #434343 100%)'});
+			if (hours > 0 && hours < 5){
+				$('.colour').css({'background-image': 'linear-gradient(to top, #141E30 0%, #243B55 100%)'});
 			}
 
-			else if (hours > 6 && hours < 12){
+			else if (hours > 12 && hours < 13){
+				$('.colour').css({'background-image': 'linear-gradient(to top, #F3904F 0%, #3B4371 100%)'});
+				var str = document.getElementById("mo").innerHTML; 
+   				var res = str.replace("[dynamic greeting]", "Good Morning");
+   				document.getElementById("mo").innerHTML = res;
+			}
+
+			else if (hours > 7 && hours < 12){
 				$('.colour').css({'background-image': 'linear-gradient(to top, #141E30 0%, #354C66 100%)'});
-			}
+			}			
 
-			else if (hours > 12 && hours < 18){
-				$('.colour').css({'background-image': 'linear-gradient(to top, #56CCF2 0%, #2F80ED 100%)'});
+			else if (hours > 13 && hours < 18){
+				$('.colour').css({'background-image': 'linear-gradient(to top, #00c6ff 0%, #0072ff 100%)'});
+				var str = document.getElementById("mo").innerHTML; 
+   				var res = str.replace("[dynamic greeting]", "Good Afternoon");
+   				document.getElementById("mo").innerHTML = res;
 			}
 
 			else if (hours > 18 && hours < 21){
+				$('.colour').css({'background-image': 'linear-gradient(to top, #141E30 0%, #243B55 100%)'});
+			}
+
+			else if (hours > 21 && hours < 0){
 				$('.colour').css({'background-image': 'linear-gradient(to top, #141E30 0%, #243B55 100%)'});
 			}
 
