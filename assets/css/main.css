@@ -2859,7 +2859,7 @@
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #000000;
+				background-color: #8ea9e8;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
@@ -2867,15 +2867,15 @@
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #000;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #030303;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #e7b788;
 			}
 
 			.tiles article:nth-child(6n):before {
