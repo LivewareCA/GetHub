@@ -13,7 +13,8 @@ Dynamic background by time of day
 * Time and date
 * Site linking (email, calendar, etc.)
 
-
+Other Features:
+* Make a work version
 
 
 Credits:
