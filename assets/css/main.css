@@ -3177,15 +3177,24 @@
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
-				padding: 0 0.125em 0 0.375em;
+				padding: 0 0.125em 0 0.5em;
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: transparent;
+				color: #ffffff!important;
 			}
 
 			#header .logo:active strong {
 				background-color: #53e3fb;
+			}
+
+			#hidelogo {
+				display: none;
+			}
+
+			#header:hover #hidelogo {
+				display: inline;
 			}
 
 		#header.reveal {
@@ -3422,6 +3431,11 @@
 				-ms-align-items: center;
 				align-items: center;
 				margin: 0 0 2em 0;
+				text-shadow:
+				-1px -1px 0 #343434,  
+				1px -1px 0 #343434,
+				-1px 1px 0 #343434,
+				1px 1px 0 #343434;
 			}
 
 				#banner > .inner .content > * {
@@ -3434,8 +3448,8 @@
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
-					font-weight: 600;
+					font-size: 0.9em;
+					font-weight: 900;
 					letter-spacing: 0.25em;
 					text-transform: uppercase;
 				}

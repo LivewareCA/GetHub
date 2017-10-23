@@ -22,7 +22,7 @@ var d = new Date(),
     minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
     hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
     ampm = d.getHours() >= 12 ? 'pm' : 'am',
-    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','October','Nov','Dec'],
+    months = ['January','February','March','April','May','June','July','August','September','October','November','December'],
     days = ['Sunday','Monday','Tueday','Wednesday','Thursday','Friday','Saturday'];
 return days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate() + '.';
 }
