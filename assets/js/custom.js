@@ -1,8 +1,41 @@
 var now = new Date();
 var hours = now.getHours();
 
-if (hours > 0 && hours < 5){
-    $('.colour').css({'background-image': 'linear-gradient(to top, blue 0%, #243B55 100%)'});
+function updateClock() {
+    var currentTime = new Date();
+    var currentHoursAP = currentTime.getHours();
+    var currentHours = currentTime.getHours();
+    var currentMinutes = currentTime.getMinutes();
+    currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+    currentHoursAP = (currentHours > 12) ? currentHours - 12 : currentHours;
+    currentHoursAP = (currentHoursAP == 0) ? 12 : currentHoursAP;
+    var currentTimeString = currentHours + ":" + currentMinutes;
+    $("#time").html(currentTimeString);}
+    $(document).ready(function () {
+    setInterval(updateClock, 1000);
+});
+
+document.getElementById("date").innerHTML = date();
+
+function date() {
+var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','October','Nov','Dec'],
+    days = ['Sunday','Monday','Tueday','Wednesday','Thursday','Friday','Saturday'];
+return days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate() + '.';
+}
+
+function updateDate() {
+var currentdate = new Date();
+var datetime = currentdate.getDate() + "/" + (currentdate.getMonth()+1) + " @ " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+$("#time").html(datetime); 
+}
+
+
+if (hours > 0 && hours < 4){
+    $('.colour').css({'background': 'url("images/night.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "It's late");
     document.getElementById("greeting").innerHTML = res;
@@ -14,8 +47,8 @@ if (hours > 0 && hours < 5){
     document.getElementById("greeting").innerHTML = res;
 }
 
-else if (hours > 5 && hours < 8){
-    $('.colour').css({'background-image': 'linear-gradient(to top, #F3904F 0%, #3B4371 100%)'});
+else if (hours > 4 && hours < 8){
+    $('.colour').css({'background': 'url("images/morning.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Morning");
     document.getElementById("greeting").innerHTML = res;
@@ -27,8 +60,8 @@ else if (hours > 5 && hours < 8){
     document.getElementById("greeting").innerHTML = res;
 }
 
-else if (hours > 8 && hours < 11){
-    $('.colour').css({'background-image': 'linear-gradient(to top, #3B4371 0%, #3498db 100%)'});
+else if (hours > 8 && hours < 12){
+    $('.colour').css({'background': 'url("images/latemorn.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Good morning");
     document.getElementById("greeting").innerHTML = res;
@@ -38,22 +71,9 @@ else if (hours > 8 && hours < 11){
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[other]", " have a good day!");
     document.getElementById("greeting").innerHTML = res;
-}			
-
-else if (hours > 11 && hours < 12){
-    $('.colour').css({'background-image': 'linear-gradient(to top, #00c6ff 0%, #0072ff 100%)'});
-    var str = document.getElementById("greeting").innerHTML; 
-    var res = str.replace("[dynamic greeting]", "Hi");
-    document.getElementById("greeting").innerHTML = res;
-    var str = document.getElementById("greeting").innerHTML; 
-    var res = str.replace(", [name]", ", Jason!");
-    document.getElementById("greeting").innerHTML = res;
-    var str = document.getElementById("greeting").innerHTML; 
-    var res = str.replace("[other]", "It's almost lunch time!");
-    document.getElementById("greeting").innerHTML = res;
 }
 
-else if (hours > 12 && hours < 18){
+else if (hours > 12 && hours < 17){
     $('.colour').css({'background': 'url("images/sky_alt.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
@@ -66,20 +86,21 @@ else if (hours > 12 && hours < 18){
     document.getElementById("greeting").innerHTML = res;
 }
 
-else if (hours > 18 && hours < 20){
-    $('.colour').css({'background-image': 'linear-gradient(to top, #ED4264 0%, #FFEDBC 100%)'});
+else if (hours > 17 && hours < 21){
+    $('.colour').css({'background': 'url("images/dusk.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
-    var res = str.replace("[dynamic greeting]", "Good Evening");
+    var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("greeting").innerHTML = res;
     var str = document.getElementById("greeting").innerHTML; 
-    var res = str.replace(", [name]", ", Jason.");
+    var res = str.replace(", [name]", " Jason,");
     document.getElementById("greeting").innerHTML = res;
     var str = document.getElementById("greeting").innerHTML; 
-    var res = str.replace("[other]", "");
+    var res = str.replace("[other]", "have a good day!");
     document.getElementById("greeting").innerHTML = res;
+
 }
 
-else if (hours > 20 && hours < 0){
+else if (hours > 21 && hours < 0){
     $('.colour').css({'background-image': 'linear-gradient(to top, #000428 0%, #004e92 100%)'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Greetings.");
@@ -104,3 +125,4 @@ else {
     var res = str.replace("[other]", "Fix me!");
     document.getElementById("greeting").innerHTML = res;
 }
+
