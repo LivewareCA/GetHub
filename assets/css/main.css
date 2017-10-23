@@ -3431,7 +3431,11 @@
 				-ms-align-items: center;
 				align-items: center;
 				margin: 0 0 2em 0;
-				text-shadow:0 0 1px transparent;
+				text-shadow:
+				-1px -1px 0 #343434,  
+				1px -1px 0 #343434,
+				-1px 1px 0 #343434,
+				1px 1px 0 #343434;
 			}
 
 				#banner > .inner .content > * {

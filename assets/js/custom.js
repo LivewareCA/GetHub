@@ -54,8 +54,8 @@ else if (hourd > 18 && hourd < 21){
 
 }
 
-else if (hourd > 21 && hourd < 0){
-    $('.colour').css({'background-image': 'linear-gradient(to top, #000428 0%, #004e92 100%)'});
+else if (hourd > 21 && hourd < 24){
+    $('.colour').css({'background': 'url("images/dark.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Greetings.");
     document.getElementById("greeting").innerHTML = res;
