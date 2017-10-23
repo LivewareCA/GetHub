@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 	</head>
 	<body>
 
@@ -13,7 +14,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><span id="hidelogo">A </span><strong>Liveware</strong> <span id="hidelogo">project</span></a>
+						<a href="index.html" class="logo"><span id="hidelogo">A </span><strong>Liveware</strong><span id="hidelogo"> project</span></a>
 					</header>
 
 				<!-- Banner -->
@@ -24,8 +25,8 @@
 							</header>
 							<div class="content">
 								<i class="wi wi-night-alt-cloudy"></i>
-								<p>It is currently 2°C and partly cloudy,<br />
-								the time is <span id="time">[time]</span> on <span id="date">[date]</span>.</p>
+								<p>It is currently <span id="weather"></span>,<br />
+								the time is <span id="time">[time]</span> on <span id="date">[date]</span></p>
 								<ul class="actions">
 									<li><a href="#one" class="button next scrolly">Get Started</a></li>
 								</ul>
@@ -40,7 +41,7 @@
 							<section id="one" class="tiles">
 								<article>
 									<span class="image">
-										<img src="images/plex_alt.jpg" alt="" />
+										<img src="images/titles/plex_alt.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="http://app.plex.tv/desktop" class="link">PLEX</a></h3>
@@ -49,16 +50,16 @@
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/food_alt.jpg" alt="" />
+										<img src="images/titles/food.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">Recipes</a></h3>
-										<p>A catalouge of easy, healthy recipes. Find, make, eat, easy.</p>
+										<p>A catalouge of healthy recipes. Make, eat, easy.</p>
 									</header>
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/wwall2.jpg" alt="" />
+										<img src="images/titles/wwall2.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">Wallpapers</a></h3>
@@ -67,11 +68,11 @@
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/steamos.jpg" alt="" />
+										<img src="images/titles/steamos.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">Steam</a></h3>
-										<p>Browse and play games!</p>
+										<p>Get your game on!</p>
 									</header>
 								</article>
 							</section>
@@ -143,7 +144,7 @@
 							</ul>
 						</div>
 					</footer>
-
+<div id="weather">Weather</div>
 			</div>
 
 		<!-- Scripts -->
@@ -155,5 +156,6 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/jquery.simpleWeather.js"></script>
 	</body>
 </html>

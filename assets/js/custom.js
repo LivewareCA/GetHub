@@ -1,8 +1,8 @@
 var thetime = new Date();
 var hourd = thetime.getHours();
 
-if (hourd > 0 && hourd < 5){
-    $('.colour').css({'background': 'url("images/night.jpg") center center'});
+if (hourd >= 0 && hourd < 5){
+    $('.colour').css({'background': 'url("images/late.png") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "It's late");
     document.getElementById("greeting").innerHTML = res;
@@ -55,7 +55,7 @@ else if (hourd > 18 && hourd < 21){
 }
 
 else if (hourd > 21 && hourd < 24){
-    $('.colour').css({'background': 'url("images/dark.jpg") center center'});
+    $('.colour').css({'background': 'url("images/ark.jpg") bottom left'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Greetings.");
     document.getElementById("greeting").innerHTML = res;
@@ -103,5 +103,20 @@ var d = new Date(),
     ampm = d.getHours() >= 12 ? 'pm' : 'am',
     months = ['January','February','March','April','May','June','July','August','September','October','November','December'],
     days = ['Sunday','Monday','Tueday','Wednesday','Thursday','Friday','Saturday'];
-return days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate() + '.';
+return days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate();
 }
+
+$(document).ready(function() {
+  $.simpleWeather({
+    location: 'Edmonton, AB',
+    woeid: '',
+    unit: 'c',
+    success: function(weather) {
+      html = weather.temp+'&deg;'+weather.units.temp + ' and ' + weather.currently;
+      $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html('<p>'+error+'</p>');
+    }
+  });
+});

@@ -2820,7 +2820,7 @@
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.4;
+				opacity: 0.75;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -2859,15 +2859,15 @@
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #8ea9e8;
+				background-color: rgba(142,169,232,0.6);
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #f39bc2;
+				background-color: rgba(243,155,194, 0.6);
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #e7b788;
+				background-color: rgba(231,183,136,0.6);
 			}
 
 			.tiles article:nth-child(6n - 2):before {
