@@ -2,7 +2,7 @@ var thetime = new Date();
 var hourd = thetime.getHours();
 
 if (hourd >= 0 && hourd < 5){
-    $('.colour').css({'background': 'url("images/late.png") center center'});
+    $('.colour').css({'background': 'url("images/nightf.png") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "It's late");
     document.getElementById("greeting").innerHTML = res;
