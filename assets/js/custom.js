@@ -14,7 +14,7 @@ if (hourd >= 0 && hourd < 5){
     document.getElementById("greeting").innerHTML = res;
 }
 
-else if (hourd > 5 && hourd < 11){
+else if (hourd >= 5 && hourd < 11){
     $('.colour').css({'background': 'url("images/morning.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Morning");
@@ -27,7 +27,7 @@ else if (hourd > 5 && hourd < 11){
     document.getElementById("greeting").innerHTML = res;
 }
 
-else if (hourd > 11 && hourd < 17){
+else if (hourd >= 11 && hourd < 18){
     $('.colour').css({'background': 'url("images/sky_alt.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
@@ -40,7 +40,7 @@ else if (hourd > 11 && hourd < 17){
     document.getElementById("greeting").innerHTML = res;
 }
 
-else if (hourd > 18 && hourd < 21){
+else if (hourd >= 18 && hourd < 21){
     $('.colour').css({'background': 'url("images/dusk.jpg") center center'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
@@ -49,12 +49,12 @@ else if (hourd > 18 && hourd < 21){
     var res = str.replace(", [name]", " Jason,");
     document.getElementById("greeting").innerHTML = res;
     var str = document.getElementById("greeting").innerHTML; 
-    var res = str.replace("[other]", "have a good day!");
+    var res = str.replace("[other]", "welcome home!");
     document.getElementById("greeting").innerHTML = res;
 
 }
 
-else if (hourd > 21 && hourd < 24){
+else if (hourd >= 21 && hourd < 24){
     $('.colour').css({'background': 'url("images/ark.jpg") bottom left'});
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Greetings.");
