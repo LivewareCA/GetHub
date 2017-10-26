@@ -3,6 +3,13 @@ var hourd = thetime.getHours();
 
 if (hourd >= 0 && hourd < 5){
     $('.colour').css({'background': 'url("images/nightf.png") center center'});
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace("[dynamic greeting]", "Hello");
+    document.getElementById("title").innerHTML = res;
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace(", [name]", " Jason");
+    document.getElementById("title").innerHTML = res;
+    
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "It's late");
     document.getElementById("greeting").innerHTML = res;
@@ -16,6 +23,13 @@ if (hourd >= 0 && hourd < 5){
 
 else if (hourd >= 5 && hourd < 11){
     $('.colour').css({'background': 'url("images/morning.jpg") center center'});
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace("[dynamic greeting]", "Hello");
+    document.getElementById("title").innerHTML = res;
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace(", [name]", " Jason");
+    document.getElementById("title").innerHTML = res;
+
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Morning");
     document.getElementById("greeting").innerHTML = res;
@@ -29,6 +43,13 @@ else if (hourd >= 5 && hourd < 11){
 
 else if (hourd >= 11 && hourd < 18){
     $('.colour').css({'background': 'url("images/sky_alt.jpg") center center'});
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace("[dynamic greeting]", "Hello");
+    document.getElementById("title").innerHTML = res;
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace(", [name]", " Jason");
+    document.getElementById("title").innerHTML = res;
+    
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("greeting").innerHTML = res;
@@ -42,6 +63,13 @@ else if (hourd >= 11 && hourd < 18){
 
 else if (hourd >= 18 && hourd < 21){
     $('.colour').css({'background': 'url("images/dusk.jpg") center center'});
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace("[dynamic greeting]", "Hello");
+    document.getElementById("title").innerHTML = res;
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace(", [name]", " Jason");
+    document.getElementById("title").innerHTML = res;
+
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("greeting").innerHTML = res;
@@ -56,6 +84,13 @@ else if (hourd >= 18 && hourd < 21){
 
 else if (hourd >= 21 && hourd < 24){
     $('.colour').css({'background': 'url("images/ark.jpg") bottom left'});
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace("[dynamic greeting]", "Hello");
+    document.getElementById("title").innerHTML = res;
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace(", [name]", " Jason");
+    document.getElementById("title").innerHTML = res;
+
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Greetings.");
     document.getElementById("greeting").innerHTML = res;
@@ -69,6 +104,13 @@ else if (hourd >= 21 && hourd < 24){
 
 else {
     $('.colour').css({'background-image': 'linear-gradient(to top, #8e9eab 0%, #eef2f3 100%)'});
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace("[dynamic greeting]", "Hello");
+    document.getElementById("title").innerHTML = res;
+    var str = document.getElementById("title").innerHTML; 
+    var res = str.replace(", [name]", " Jason");
+    document.getElementById("title").innerHTML = res;
+
     var str = document.getElementById("greeting").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Uh oh...");
     document.getElementById("greeting").innerHTML = res;
