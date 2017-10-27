@@ -2689,6 +2689,7 @@
 
 				.tiles article > a h2 {
 					margin: 0;
+					text-shadow: 0px 1px 2px #bbb;
 				}
 
 				.tiles article > a .content {
@@ -2708,7 +2709,7 @@
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: rgba(243,155,194, 0.6);;
+				background-image: linear-gradient(to top right, #A1FFCE 0%, #FAFFD1 100%);
 			}
 
 			.tiles article.style2 > .image:before {
