@@ -83,7 +83,7 @@ else if (hourd >= 18 && hourd < 21){
 }
 
 else if (hourd >= 21 && hourd < 24){
-    $('.colour').css({'background': 'url("images/ark.jpg") bottom left'});
+    $('.colour').css({'background': 'url("images/all4.jpg")'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
