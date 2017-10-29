@@ -2734,11 +2734,27 @@
 				background-image: linear-gradient(to top right, #3D7EAA 0%, #FFE47A 100%);
 			}
 
-			.tiles article.lunch1 > .image:before {
-				background-image: linear-gradient(to top right, #A1FFCE 0%, #FAFFD1 100%);
+			.tiles article.breakfast5 > .image:before {
+				background-image: linear-gradient(to top right, #F3904F 0%, #3B4371 100%);
 			}
 
-			.tiles article.style2 > .image:before {
+			.tiles article.breakfast6 > .image:before {
+				background-image: linear-gradient(to top right, #E8CBC0 0%, #636FA4 100%);
+			}
+
+			.tiles article.breakfast7 > .image:before {
+				background-image: linear-gradient(to top right, #FFAFBD 0%, #ffc3a0 100%);
+			}
+
+			.tiles article.breakfast8 > .image:before {
+				background-image: linear-gradient(to top right, #800080 0%, #ffc0cb 100%);
+			}
+
+			.tiles article.breakfast9 > .image:before {
+				background-image: linear-gradient(to top right, #FBD3E9 0%, #BB377D 100%);
+			}
+
+			.tiles article.lunch1 > .image:before {
 				background-image: linear-gradient(to top right, #F3F9A7 0%, #ffffff 100%);
 			}
 
