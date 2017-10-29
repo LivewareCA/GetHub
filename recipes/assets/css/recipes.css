@@ -2731,7 +2731,7 @@
 			}
 
 			.tiles article.breakfast4 > .image:before {
-				background-image: linear-gradient(to top right, #3D7EAA 0%, #FFE47A 100%);
+				background-image: linear-gradient(to top right, #B24592 0%, #3D7EAA 100%);
 			}
 
 			.tiles article.breakfast5 > .image:before {
@@ -2751,20 +2751,58 @@
 			}
 
 			.tiles article.breakfast9 > .image:before {
-				background-image: linear-gradient(to top right, #FBD3E9 0%, #BB377D 100%);
+				background-image: linear-gradient(to top right, #F15F79 0%, #FFE47A 100%);
 			}
 
 			.tiles article.lunch1 > .image:before {
 				background-image: linear-gradient(to top right, #F3F9A7 0%, #ffffff 100%);
 			}
 
-			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+			.tiles article.lunch2 > .image:before {
+				background-image: linear-gradient(to top right, #D3959B 0%, #BFE6BA 100%);
 			}
 
-			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+			.tiles article.lunch3 > .image:before {
+				background-image: linear-gradient(to top right, #fffbd5 0%, #c94b4b 100%);
 			}
+
+			.tiles article.lunch4 > .image:before {
+				background-image: linear-gradient(to top right, #5A3F37 0%, #2C7744 100%);
+			}
+
+			.tiles article.lunch5 > .image:before {
+				background-image: linear-gradient(to top right, #4B1248 0%, #F0C27B 100%);
+			}
+
+			.tiles article.lunch6 > .image:before {
+				background-image: linear-gradient(to top right, #525252 0%, #BE5869 100%);
+			}
+
+			.tiles article.lunch7 > .image:before {
+				background-image: linear-gradient(to top right, #f2fcfe 0%, #b6fbff 100%);
+			}
+
+			.tiles article.lunch8 > .image:before {
+				background-image: linear-gradient(to top right, #FFEDBC 0%, #ED4264 100%);
+			}
+
+			.tiles article.lunch9 > .image:before {
+				background-image: linear-gradient(to top right, #FFAFBD 0%, #C9FFBF 100%);
+			}
+
+			.tiles article.lunch10 > .image:before {
+				background-image: linear-gradient(to top right, #3D7EAA 0%, #F09819 100%);
+			}
+
+			.tiles article.lunch11 > .image:before {
+				background-image: linear-gradient(to top right, #EECDA3 0%, #EF629F 100%);
+			}
+
+			.tiles article.lunch12 > .image:before {
+				background-image: linear-gradient(to top right, #f2fcfe 0%, #DCE35B 100%);
+			}
+
+
 
 			.tiles article.style5 > .image:before {
 				background-color: #ae85ca;
