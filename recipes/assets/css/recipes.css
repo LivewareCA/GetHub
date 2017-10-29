@@ -2722,6 +2722,18 @@
 				background-image: linear-gradient(to top right, #d9a7c7 0%, #fffcdc 100%);
 			}
 
+			.tiles article.breakfast2 > .image:before {
+				background-image: linear-gradient(to top right, #A1FFCE 0%, #FAFFD1 100%);
+			}
+
+			.tiles article.breakfast3 > .image:before {
+				background-image: linear-gradient(to top right, #89fffd 0%, #ef32d9 100%);
+			}
+
+			.tiles article.breakfast4 > .image:before {
+				background-image: linear-gradient(to top right, #3D7EAA 0%, #FFE47A 100%);
+			}
+
 			.tiles article.lunch1 > .image:before {
 				background-image: linear-gradient(to top right, #A1FFCE 0%, #FAFFD1 100%);
 			}
@@ -2766,10 +2778,6 @@
 				max-height: 15em;
 				opacity: 1;
 			}
-
-		* + .tiles {
-			margin-top: 2em;
-		}
 
 		body.is-loading .tiles article {
 			-moz-transform: scale(0.9);
