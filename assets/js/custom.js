@@ -2,7 +2,7 @@ var thetime = new Date();
 var hourd = thetime.getHours();
 
 if (hourd >= 0 && hourd < 5){
-    $('.colour').css({'background': 'url("images/nightf.png") center center'});
+    $('.colour').css({'background': 'url("images/night/2.png") center center'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
@@ -22,7 +22,7 @@ if (hourd >= 0 && hourd < 5){
 }
 
 else if (hourd >= 5 && hourd < 11){
-    $('.colour').css({'background': 'url("images/morning.jpg") center center'});
+    $('.colour').css({'background': 'url("images/morning/1.jpg") center center'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
@@ -41,8 +41,8 @@ else if (hourd >= 5 && hourd < 11){
     document.getElementById("greeting").innerHTML = res;
 }
 
-else if (hourd >= 11 && hourd < 18){
-    $('.colour').css({'background': 'url("images/sky_alt.jpg") center center'});
+else if (hourd >= 11 && hourd < 17){
+    $('.colour').css({'background': 'url("images/day/3.jpg") center center'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
@@ -61,8 +61,8 @@ else if (hourd >= 11 && hourd < 18){
     document.getElementById("greeting").innerHTML = res;
 }
 
-else if (hourd >= 18 && hourd < 21){
-    $('.colour').css({'background': 'url("images/dusk.jpg") center center'});
+else if (hourd >= 17 && hourd < 21){
+    $('.colour').css({'background': 'url("images/afterevening/3.jpg") center center'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
@@ -83,7 +83,7 @@ else if (hourd >= 18 && hourd < 21){
 }
 
 else if (hourd >= 21 && hourd < 24){
-    $('.colour').css({'background': 'url("images/all4.jpg")'});
+    $('.colour').css({'background': 'url("images/late/2.jpg")'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
