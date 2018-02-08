@@ -2,26 +2,38 @@ GetHub - The personal browser-hub.
 
 A custom homepage. 
 
-Feature-List: (* Denotes Work in-progress.)
+IN-PROGRESS:
+- Recipes page
+	- Searchable
+	- Tagable
+	- Nutritional information (for ease of adding to health apps)
+	- Add more Recipes
+	- Mobile Page
+- Games page
+	- Steam games launched via webpage (SCRATCH TESTED WORKING)
+- Wallpaper gallery
+	- Make template
+	- Catagories
+	- Tagable
+	- Searchable
+	- Host somewhere other than GitHub
+- Landing page dynamic greetings
+- Work Version
+- CSS Redo
+	- CSS is "Very HackedTM". Redo entire CSS sheet, with a mobile responsive approach.
+- Host somewhere
+- Link to Spotify
+- SmartHome controls?
 
-* Launch Steam (Origin) games from browser (I tested this, it works)
-* Recipes catalouge
-	* Searchable, or catagories
-	* Tagable
-	* Nutritional information (for ease of adding to health apps)
-* Dynamic background by time of day
-* Dynamic greetings
-* Site linking (email, calendar, etc.)
-
-Other Features:
-* Make a work version
-* background image array instead of gradient
-
-FINISHED FEATURES
-- Live weather updates
+FINISHED FEATURES:
+- Plex Launcher
+	- Simple link to Plex localsite.
+- Landing page live weather updates
 	- Weather, icons, and temp all display on main page.
-- Time & Date
+- Landing page time & date
 	- Time and date update, and are displayed on main page.
+- Landing page random backgrounds
+	- Backgrounds are randomized during times of day.
 
 Credits:
 
@@ -39,4 +51,4 @@ Other:
 	background-size polyfill (github.com/louisremi)
 	Respond.js (j.mp/respondjs)
 	Skel (skel.io)
-	SimpleWeather (impleweatherjs.com)
+	SimpleWeather (simpleweatherjs.com)
