@@ -2,7 +2,8 @@ var thetime = new Date();
 var hourd = thetime.getHours();
 
 if (hourd >= 0 && hourd < 5){
-    $('.colour').css({'background': 'url("images/night/2.jpg") center center'});
+    var images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'];
+    $('.colour').css({'background': 'url(images/night/' + images[Math.floor(Math.random() * images.length)] + ')'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
@@ -22,7 +23,8 @@ if (hourd >= 0 && hourd < 5){
 }
 
 else if (hourd >= 5 && hourd < 11){
-    $('.colour').css({'background': 'url("images/morning/1.jpg") center center'});
+    var images = ['1.jpg', '2.jpg', '3.jpg'];
+    $('.colour').css({'background': 'url(images/morning/' + images[Math.floor(Math.random() * images.length)] + ')'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
@@ -42,7 +44,8 @@ else if (hourd >= 5 && hourd < 11){
 }
 
 else if (hourd >= 11 && hourd < 17){
-    $('.colour').css({'background': 'url("images/day/3.jpg") center center'});
+    var images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'];
+    $('.colour').css({'background': 'url(images/day/' + images[Math.floor(Math.random() * images.length)] + ')'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
@@ -62,7 +65,8 @@ else if (hourd >= 11 && hourd < 17){
 }
 
 else if (hourd >= 17 && hourd < 21){
-    $('.colour').css({'background': 'url("images/afterevening/3.jpg") center center'});
+    var images = ['1.jpg', '2.jpg', '3.jpg'];
+    $('.colour').css({'background': 'url(images/afterevening/' + images[Math.floor(Math.random() * images.length)] + ')'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
@@ -83,7 +87,8 @@ else if (hourd >= 17 && hourd < 21){
 }
 
 else if (hourd >= 21 && hourd < 24){
-    $('.colour').css({'background': 'url("images/late/2.jpg")'});
+    var images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg'];
+    $('.colour').css({'background': 'url(images/late/' + images[Math.floor(Math.random() * images.length)] + ')'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
