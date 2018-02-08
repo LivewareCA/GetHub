@@ -9,16 +9,19 @@ Feature-List: (* Denotes Work in-progress.)
 	* Searchable, or catagories
 	* Tagable
 	* Nutritional information (for ease of adding to health apps)
-* Live weather updates
-Dynamic background by time of day
+* Dynamic background by time of day
 * Dynamic greetings
-* Time and date
 * Site linking (email, calendar, etc.)
 
 Other Features:
 * Make a work version
 * background image array instead of gradient
 
+FINISHED FEATURES
+- Live weather updates
+	- Weather, icons, and temp all display on main page.
+- Time & Date
+	- Time and date update, and are displayed on main page.
 
 Credits:
 
@@ -29,7 +32,6 @@ Demo Images:
 	Unsplash (unsplash.com)
 
 Icons:
-	Weather Icons by Erik Flowers (erikflowers.github.io/weather-icons)
 	Font Awesome (fortawesome.github.com/Font-Awesome)
 
 Other:
