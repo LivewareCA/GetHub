@@ -2,7 +2,7 @@ var thetime = new Date();
 var hourd = thetime.getHours();
 
 if (hourd >= 0 && hourd < 5){
-    $('.colour').css({'background': 'url("images/night/2.png") center center'});
+    $('.colour').css({'background': 'url("images/night/2.jpg") center center'});
     var str = document.getElementById("title").innerHTML; 
     var res = str.replace("[dynamic greeting]", "Hello");
     document.getElementById("title").innerHTML = res;
@@ -152,13 +152,17 @@ $(document).ready(function() {
   $.simpleWeather({
     location: 'Edmonton, AB',
     woeid: '',
-    unit: 'c',
+    unit: 'C',
     success: function(weather) {
       html = weather.temp+'&deg;'+weather.units.temp + ' and ' + weather.currently;
-      $("#weather").html(html);
+      icoo = '<i class="icon-'+weather.code+'"></i>';
+      $("#currently").html(html);
+      $("#icoo").html(icoo);
     },
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
     }
   });
 });
+  
+ 
